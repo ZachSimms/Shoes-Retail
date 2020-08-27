@@ -1,10 +1,3 @@
-//
-//  Shoes_RetailApp.swift
-//  Shoes Retail
-//
-//  Created by Caleb Wells on 8/26/20.
-//
-
 import SwiftUI
 
 @main
