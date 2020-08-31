@@ -1,10 +1,12 @@
 import SwiftUI
 
 struct GridCellView: View {
+    let shoe: Shoe
+    
     var body: some View {
         VStack {
             HStack {
-                Text("$180")
+                Text("$\(shoe.price)")
                     .font(.body)
                     .bold()
                 
@@ -16,16 +18,16 @@ struct GridCellView: View {
             }
             .padding([.top, .horizontal])
             
-            Image(uiImage: #imageLiteral(resourceName: "shoe"))
+            Image(shoe.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
             
-            Text("Some Shoe")
+            Text(shoe.name)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
             
-            Text("some detail")
+            Text(shoe.detail)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding([.leading, .bottom])
         }
@@ -39,10 +41,10 @@ struct GridCellView: View {
 struct GridCellView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            GridCellView()
+            GridCellView(shoe: Shoe(price: 100, brand: "Nike", name: "Air Jordan 1 Low SE", detail: "Men's Shoe", image: "shoe", favorited: false))
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
-            GridCellView()
+            GridCellView(shoe: Shoe(price: 100, brand: "Nike", name: "Air Jordan 1 Low SE", detail: "Men's Shoe", image: "shoe", favorited: false))
                 .previewLayout(.sizeThatFits)
         }
     }

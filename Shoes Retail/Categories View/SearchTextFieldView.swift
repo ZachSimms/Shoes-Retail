@@ -14,11 +14,11 @@ struct SearchTextFieldView: View {
                 .padding(.leading)
                 .offset(x: 12)
             
-            Button(action: {}, label: {
+            Button(action: { text = "" }, label: {
                 Circle()
                     .frame(width: 45, height: 45)
-                    .foregroundColor(Color(.systemTeal))
-                    .overlay(Image(systemName: "magnifyingglass").foregroundColor(.white))
+                    .foregroundColor(text.isEmpty ? Color(.systemTeal) : .red)
+                    .overlay(SearchBarButtonOverlayView(text: $text))
                     .padding(.trailing)
                     .offset(x: -5)
             })
@@ -36,6 +36,20 @@ struct SearchTextFieldView_Previews: PreviewProvider {
             SearchTextFieldView(text: Binding.constant(""))
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
+        }
+    }
+}
+
+struct SearchBarButtonOverlayView: View {
+    @Binding var text: String
+    
+    var body: some View {
+        Group {
+            if text.isEmpty {
+                Image(systemName: "magnifyingglass").foregroundColor(.white)
+            } else {
+                Image(systemName: "xmark").foregroundColor(.white)
+            }
         }
     }
 }

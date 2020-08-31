@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0011698524FC9BF60076F9A5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011698424FC9BF60076F9A5 /* AccountView.swift */; };
+		0011698724FC9F660076F9A5 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011698624FC9F660076F9A5 /* SideMenuView.swift */; };
+		0011698924FCA5470076F9A5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011698824FCA5470076F9A5 /* Data.swift */; };
 		0030211124F74ED200E1A67F /* Shoes_RetailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030211024F74ED200E1A67F /* Shoes_RetailApp.swift */; };
 		0030211324F74ED200E1A67F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030211224F74ED200E1A67F /* ContentView.swift */; };
 		0030211524F74ED300E1A67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0030211424F74ED300E1A67F /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0011698424FC9BF60076F9A5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0011698624FC9F660076F9A5 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		0011698824FCA5470076F9A5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		0030210D24F74ED200E1A67F /* Shoes Retail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shoes Retail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0030211024F74ED200E1A67F /* Shoes_RetailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes_RetailApp.swift; sourceTree = "<group>"; };
 		0030211224F74ED200E1A67F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,9 @@
 			children = (
 				0030211024F74ED200E1A67F /* Shoes_RetailApp.swift */,
 				0030211224F74ED200E1A67F /* ContentView.swift */,
+				0011698424FC9BF60076F9A5 /* AccountView.swift */,
+				0011698624FC9F660076F9A5 /* SideMenuView.swift */,
+				0011698824FCA5470076F9A5 /* Data.swift */,
 				0040463224F8356500321F6C /* Categories View */,
 				0030211424F74ED300E1A67F /* Assets.xcassets */,
 				0030211924F74ED300E1A67F /* Info.plist */,
@@ -171,7 +180,10 @@
 				0030212624F7561400E1A67F /* GridCellView.swift in Sources */,
 				0030211324F74ED200E1A67F /* ContentView.swift in Sources */,
 				0030212424F7546C00E1A67F /* CategoriesButtonView.swift in Sources */,
+				0011698724FC9F660076F9A5 /* SideMenuView.swift in Sources */,
+				0011698524FC9BF60076F9A5 /* AccountView.swift in Sources */,
 				0030212824F758B900E1A67F /* GridView.swift in Sources */,
+				0011698924FCA5470076F9A5 /* Data.swift in Sources */,
 				0030212C24F75BEA00E1A67F /* NavigationBarItemView.swift in Sources */,
 				0030211124F74ED200E1A67F /* Shoes_RetailApp.swift in Sources */,
 				0030212024F7504300E1A67F /* SearchTextFieldView.swift in Sources */,
